@@ -18,7 +18,7 @@ export default function BatteryCalculator() {
     formData.append("file", pdfFile);
     formData.append("mode", mode);
 
-    const res = await fetch("http://localhost:8000/api/calculate", {
+    const res = await fetch("http://battery-backend.onrender.com/api/calculate", {
       method: "POST",
       body: formData
     });
